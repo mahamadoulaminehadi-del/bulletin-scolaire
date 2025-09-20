@@ -1,0 +1,154 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+            
+        
+        
+        body {
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #f5e5c3);
+            min-height: 100vh;
+            min-width: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+             
+        }
+
+.container {
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #f5e5c3);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 100%;
+    margin: auto;
+    box-shadow: 0 0 10px rgb(218, 219, 197);
+}
+#titre{
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+section{
+background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  
+}
+
+
+ section h1, h2 {
+    text-align: center;
+    color: white;}
+   
+   section label {
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+section input {
+    width: 95%;
+height: 35px;
+    padding: 8px;
+    margin-top: 4px;
+    border: 2px solid #ccc;
+    border-radius: 7px;
+    font-size:1.5rem;
+    color: red;
+}
+#fichier{
+   width: 100%;
+height: 40px;
+    padding: 8px;
+    margin-top: 4px;
+    border: 0;
+    border-radius: 7px; 
+    
+}
+
+
+
+
+#ss{
+text-align: center;
+
+}
+#btn {
+     
+    
+    background-color: #1b6911;
+    color: white;
+    
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+    border: 1 solid rgb(255, 255, 255);
+    }
+    
+    
+    div button{
+            font-size: 16px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+           
+         background-color: #1b6911;
+         word-spacing: 2px;
+    color: white;
+    border: 1 dotted;
+   border-color: rgb(200, 199, 201);
+    border-radius: 10px;
+    cursor: pointer;
+    width: 180px;
+height: 50px;
+    
+    }
+    P{
+      max-width: 90%;
+        max-height: 100%;
+        
+        
+    }
+    #resultat{
+        display: none;
+    }
+    nav{
+
+       background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 900px;
+    height: 150px;
+    color: white;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(202, 60, 60, 0.1);
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+   
+    }
+    nav ul{
+
+       background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 900px;
+    color: white;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    }

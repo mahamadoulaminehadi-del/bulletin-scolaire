@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="./fontawesome-free-7.0.0-web/css/all.min.css">
+</head>
+<body>
+<main class="container">
+<section>	<h1 id="titre">Bulletin de Notes<br><br>Remplir ce formulaire de:<br>Semestre 2</h1><br>
+	
+</section><br>
+	<section>
+<h1>Renseignement sur l'établissement et l'élève</h1>
+<div><label for="">Régions et commune de l'établissement :<input type="text" id="fr" placeholder="Régions et commune" class="inp"></label></div><br>
+
+
+<label for="fichier">Logo de l'établissement:<br>Choisir le logo</label>
+<input type="file" accept="image/*" id="fichier" name="fichier" onchange="afficherImage(this)">
+<img src='' alt='' id='imageAfficher' style='max-width: 100px; max-height: 100px;'>
+ 
+</section>
+
+<br>
+<section> 
+<div>
+<label for="">Nom de l'établissement:<input type="text" id="far" placeholder="Nom de l'établissement" class="inp"></label>
+<label for="">Téléphone de l'établissement:<input type="text" id="hgr" placeholder="Téléphone de l'établissement" class="inp"></label>
+<label for="">Email de l'établissement:<input type="text" id="ar" placeholder="E-mail de l'établissement" class="inp"></label>
+<label for="">Année scolaire:<input type="text" id="mr" placeholder="Année Scolaire" class="inp"></label>
+</div>
+</section>
+<br> 
+<section> 
+	<div>
+<label for="">Nom et prénom de l'élève:<input type="text" id="epr" placeholder="Nom et Prénom de l'élève" class="inp"></label>
+<label for="">Professeur Responsable:<input type="text" id="efr" placeholder="Professeur Responsable" class="inp"></label>
+<label for="">Classe de l'élève:<input type="text" id="svtr" placeholder="Classe de l'élève" class="inp"></label>
+<label for="">Effectif de la classe:<input type="text" id="pcr" placeholder="Effectif de la classe" class="inp"></label>
+
+	</div>
+</section>
+<br>
+	<section> 
+	<h1>Renseignement sur les Notes</h1>
+<div><h1>Français</h1>
+<label for="">Note de classe:<input type="number" id="ncf" placeholder="Note de classe"></label>
+<label for="">Moyenne de composition:<input type="number" id="mcf" placeholder="Moyenne de composition"></label>
+<label for="">coefficient:<input type="number" id="fr1" placeholder="coefficient"></label>
+
+</div></section><br>
+<br><section>
+
+<div><h1>Histoire-Géographie</h1>
+<label for="">Note de classe:<input type="number" id="nchg" placeholder="Note de classe"></label></span>
+<label for="">Moyenne de composition:<input type="number" id="mchg" placeholder="Moyenne de composition"></label>
+<label for="">coefficient:<input type="number" id="hgr1" placeholder="coefficient"></label>
+
+</div></section>
+<br><section>
+
+<div><h1>Anglais</h1>
+<label for="">Note de classe:<input type="number" id="nca" placeholder="Note de classe"></label>
+<label for="">Moyenne de composition:<input type="number" id="mca" placeholder="Moyenne de composition"></label>
+<label for="">coefficient:<input type="number" id="ar1" placeholder="coefficient"></label>
+
+</div></section>
+<br><section>
+<div><h1>Mathématique</h1>
+<label for="">Note de classe:<input type="number" id="ncm" placeholder="Note de classe"></label></span>
+<label for="">Moyenne de composition:<input type="number" id="mcm" placeholder="Moyenne de composition"></label></span>
+<label for="">coefficient:<input type="number" id="mr1" placeholder="coefficient"></label>
+
+</div></section>
+<br><section>
+
+<div><h1>Physique-Chimie</h1>
+<label for="">Note de classe:<input type="number" id="ncpc" placeholder="Note de classe"></label>
+<label for="">Moyenne de composition:<input type="number" id="mcpc" placeholder="Moyenne de composition"></label>
+<label for="">coefficient:<input type="number" id="pcr1" placeholder="coefficient"></label>
+
+</div></section>
+<br><section>
+
+<div><h1>Sciences de la Vie et de la Terre (SVT)</h1>
+<label for="">Note de classe:<input type="number" id="ncsvt" placeholder="Note de classe"></label>
+<label for="">Moyenne de composition:<input type="number" id="mcsvt" placeholder="Moyenne de composition"></label>
+<label for="">coefficient:<input type="number" id="svtr1" placeholder="coefficient"></label>
+
+</div></section>
+<br><section>
+
+<div><h1>Economie Familiale</h1>
+<label for="">Note de classe:<input type="number" id="ncef" placeholder="Note de classe"></label>
+<label for="">Moyenne de composition:<input type="number" id="mcef" placeholder="Moyenne de composition"></label>
+<span style="display: none;">efr1:</span><label for="">coefficient:<input type="number" id="efr1" placeholder="coefficient"></label>
+
+</div></section>
+<br><section>
+
+<div><h1>Education Physique</h1>
+<label for="">Note de classe:<input type="number" id="ncep" placeholder="Note de classe"></label>
+<label for="">Moyenne de composition:<input type="number" id="mcep" placeholder="Moyenne de composition"></label>
+<label for="">coefficient:<input type="number" id="epr1" placeholder="coefficient"></label>
+
+</div></section>
+<br><section>
+
+<div><h1>Conduite</h1>
+<label for="">Note:<input type="number" id="cr" placeholder="Note"></label>
+<label for="">coefficient:<input type="number" id="cr1" value=1></label>
+
+</div></section>
+<br>
+<section>
+	<label for=""><h1>Moyenne du Semestre 1</h1><input type="number" id="s1" placeholder="Moyenne du Semestre 1"></label>
+</section>
+<p id="resultat"></p>
+<br>
+<div id="ss">
+<button id="btn" onclick="bul2 ()"><i class=""></i>Valider le bulletin</button>
+<br><br><hr><br>
+
+	<button id="pdf">Afficher le bulletin</button>
+	
+	<button id="telecharger">Telecharger le bulletin</button> 
+	 
+	<button id="imp">Imprimer</button> 
+</div>
+<br><hr><br>
+<p id="result"></p>
+
+</main>
+
+</body>
+
+
+  
+<script src="javas -S2.js"></script>         
+  <script src="image.js"></script>   
+   
+</html>
